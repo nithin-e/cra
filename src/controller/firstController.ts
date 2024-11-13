@@ -65,7 +65,6 @@ const firstController = {
                 });
             }
     
-          
             const finding_Task = await Todo.findOne({ _id: id });
             if (!finding_Task) {
                 return res.status(404).json({ 
